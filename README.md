@@ -25,3 +25,13 @@ This lab features an isolated corporate environment designed to mimic standard e
 Below is confirmation of the successful registration and integration of `Workstation-01` into the target `cyberlab.local` naming infrastructure:
 
 ![Domain Join Success](./screenshots/domain_join.png)
+
+
+
+
+
+
+## 💥 Phase 4: Active Directory Group Policy Enforcements & Threat Simulations
+- **Security Hardening:** Provisioned custom Domain Group Policies (GPOs) modifying default account security registers to actively limit maximum unauthenticated logon threshold cycles to **5 invalid attempts**.
+- **Brute-Force Execution:** Simulated an automated credential stuffing scenario on endpoint nodes targeting standard organizational user containers.
+- **Incident Response Artifacts:** Successfully caught and investigated **Event ID 4740 (Account Lockout)** entries across domain system controllers, tracking execution chains back to source identifiers (`Workstation-01`) and target victims (`CYBERLAB\jdoe`).
