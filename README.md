@@ -1,6 +1,6 @@
 # Windows Active Directory Security Home Lab
 
-## 📊 Lab Architecture Overview
+## Lab Architecture Overview
 This lab features an isolated corporate environment designed to mimic standard enterprise directory services and client systems. 
 
 | Machine Name | Operating System | IP Address | Network Role |
@@ -8,7 +8,7 @@ This lab features an isolated corporate environment designed to mimic standard e
 | **DC-01** | Windows Server 2022 | `192.168.10.10` | Domain Controller & DNS Server |
 | **Workstation-01** | Windows 11 Enterprise | `192.168.10.20` | Domain Joined Employee Desktop |
 
-## 🛠️ Step-by-Step Implementation Details
+## Step-by-Step Implementation Details
 
 ### 1. Network & Domain Controller Provisioning
 - Deployed a virtualized environment using **VMware Workstation Pro** configured with an isolated **Host-Only** network adapter.
@@ -21,7 +21,7 @@ This lab features an isolated corporate environment designed to mimic standard e
 - Tailored network configurations to target `192.168.10.10` as the Preferred DNS handler.
 - Authorized and completed a secure domain merge process using primary network administrative credentials.
 
-## 🖼️ Verification of Target Domain Integration
+## Verification of Target Domain Integration
 Below is confirmation of the successful registration and integration of `Workstation-01` into the target `cyberlab.local` naming infrastructure:
 
 ![Domain Join Success](./screenshots/domain_join.png)
@@ -31,7 +31,7 @@ Below is confirmation of the successful registration and integration of `Worksta
 
 
 
-## 💥 Active Directory Group Policy Enforcements & Threat Simulations
+## Active Directory Group Policy Enforcements & Threat Simulations
 - **Security Hardening:** Provisioned custom Domain Group Policies (GPOs) modifying default account security registers to actively limit maximum unauthenticated logon threshold cycles to **5 invalid attempts**.
 - **Brute-Force Execution:** Simulated an automated credential stuffing scenario on endpoint nodes targeting standard organizational user containers.
 - **Incident Response Artifacts:** Successfully caught and investigated **Event ID 4740 (Account Lockout)** entries across domain system controllers, tracking execution chains back to source identifiers (`Workstation-01`) and target victims (`CYBERLAB\jdoe`).
