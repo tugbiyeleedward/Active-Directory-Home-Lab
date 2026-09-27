@@ -31,7 +31,7 @@ Below is confirmation of the successful registration and integration of `Worksta
 
 
 
-## 💥 Phase 4: Active Directory Group Policy Enforcements & Threat Simulations
+## 💥 Active Directory Group Policy Enforcements & Threat Simulations
 - **Security Hardening:** Provisioned custom Domain Group Policies (GPOs) modifying default account security registers to actively limit maximum unauthenticated logon threshold cycles to **5 invalid attempts**.
 - **Brute-Force Execution:** Simulated an automated credential stuffing scenario on endpoint nodes targeting standard organizational user containers.
 - **Incident Response Artifacts:** Successfully caught and investigated **Event ID 4740 (Account Lockout)** entries across domain system controllers, tracking execution chains back to source identifiers (`Workstation-01`) and target victims (`CYBERLAB\jdoe`).
