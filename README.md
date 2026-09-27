@@ -50,7 +50,7 @@ Below is confirmation of the successful registration and integration of `Worksta
 **Figure 4.3: Event ID 4740 Forensic Discovery - Attack Source Tracked**
 ![Windows Event ID 4740 Source Workstation Log](event-4740-source.png.png)
 
-## 📈 Future Enhancements
+## Future Enhancements
 To build upon this defensive baseline, I plan to expand the environment with the following capabilities:
 * **Centralized EDR Deployment:** Install an open-source Endpoint Detection & Response (EDR) agent (like LimaCharlie or Wazuh) on Workstation-01 to monitor real-time process injection attempts.
 * **Network Segmentation:** Implement a virtualized pfSense firewall to isolate the Employee OU subnet from administrative infrastructure zones.
