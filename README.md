@@ -35,3 +35,14 @@ Below is confirmation of the successful registration and integration of `Worksta
 - **Security Hardening:** Provisioned custom Domain Group Policies (GPOs) modifying default account security registers to actively limit maximum unauthenticated logon threshold cycles to **5 invalid attempts**.
 - **Brute-Force Execution:** Simulated an automated credential stuffing scenario on endpoint nodes targeting standard organizational user containers.
 - **Incident Response Artifacts:** Successfully caught and investigated **Event ID 4740 (Account Lockout)** entries across domain system controllers, tracking execution chains back to source identifiers (`Workstation-01`) and target victims (`CYBERLAB\jdoe`).
+
+### Threat Simulation Forensic Artifacts
+
+**Figure 4.1: Domain Group Policy Hardening Rules**
+![Active Directory Account Lockout Policy Settings](gpo-policy.png)
+
+**Figure 4.2: Event ID 4740 Forensic Discovery - Target Account Identified**
+![Windows Event ID 4740 Target Account Log](event-4740-account.png)
+
+**Figure 4.3: Event ID 4740 Forensic Discovery - Attack Source Tracked**
+![Windows Event ID 4740 Source Workstation Log](event-4740-source.png)
