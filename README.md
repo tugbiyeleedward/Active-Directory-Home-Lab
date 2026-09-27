@@ -1,13 +1,12 @@
 # Windows Active Directory Security Home Lab
 This hands-on cybersecurity home lab demonstrates the end-to-end orchestration of an enterprise threat simulation and forensic incident response cycle. Operating within a securely isolated VMware Workstation sandbox, I deployed a Windows Server Active Directory Domain Controller (DC-01) alongside a Windows 11 Client (Workstation-01). After configuring robust Domain Group Policies, specifically enforcing account lockout thresholds to mitigate brute-force vectors, I executed an intentional credential-stuffing attack simulation. Utilizing native Windows Security Event logs and telemetry parsing, I successfully conducted a root-cause forensic analysis. The investigation effectively identified the targeted asset (Account: jdoe) and tracked the precise malicious origin network handle (Caller Computer: WORKSTATION-01), successfully validating the integrity of the defensive posture.
 ### Skills Gained & Technologies Used
-![Windows Server](https://shields.io)
-![Active Directory](https://shields.io)
-![Group Policy](https://shields.io)
-![Windows 11](https://shields.io)
-![VMware](https://shields.io)
-![Incident Response](https://shields.io)
-![Sysmon](https://shields.io)
+* **Active Directory Domain Services (AD DS):** User provisioning, Domain Controller management, and naming services infrastructure.
+* **Windows Server 2022 & Windows 11 Enterprise:** Enterprise operating system integration, static network routing, and secure domain joining.
+* **Group Policy Management (GPO):** Configuring and deploying global account lockout thresholds to enforce system hardening policies.
+* **Endpoint Telemetry & Forensic Analysis:** Auditing native Windows Security Event Logs and Microsoft Sysmon artifacts to track adversarial execution chains.
+* **Virtualization Architecture:** Virtual sandbox orchestration and Host-Only networking isolation using VMware Workstation Pro.
+
 
 ---
 
