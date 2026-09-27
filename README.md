@@ -39,10 +39,10 @@ Below is confirmation of the successful registration and integration of `Worksta
 ### Threat Simulation Forensic Artifacts
 
 **Figure 4.1: Domain Group Policy Hardening Rules**
-![Active Directory Account Lockout Policy Settings](gpo-policy.png)
+[Active Directory Account Lockout Policy Settings](gpo-policy.png)
 
 **Figure 4.2: Event ID 4740 Forensic Discovery - Target Account Identified**
-![Windows Event ID 4740 Target Account Log](event-4740-account.png)
+[Windows Event ID 4740 Target Account Log](event-4740-account.png)
 
 **Figure 4.3: Event ID 4740 Forensic Discovery - Attack Source Tracked**
-![Windows Event ID 4740 Source Workstation Log](event-4740-source.png)
+[Windows Event ID 4740 Source Workstation Log](event-4740-source.png)
